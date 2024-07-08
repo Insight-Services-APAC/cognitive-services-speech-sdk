@@ -281,7 +281,7 @@
         "DatabaseName": "[concat('Database-', toLower(variables('InstanceId')))]",
         "ServiceBusName": "[concat('ServiceBus-', variables('InstanceId'))]",
         "AppInsightsName": "[concat('AppInsights-', variables('InstanceId'))]",
-        "KeyVaultName": "[concat('KV-', variables('InstanceId'))]",
+        "KeyVaultName": "[concat('akv-', variables('InstanceId'))]",
         "EventGridSystemTopicName": "[concat(variables('StorageAccountName'),'-',variables('InstanceId'))]",
         "StartTranscriptionFunctionName": "[take(concat('StartTranscriptionFunction-', variables('InstanceId')),60)]",
         "StartTranscriptionFunctionId": "[resourceId('Microsoft.Web/sites', variables('StartTranscriptionFunctionName'))]",
